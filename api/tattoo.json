@@ -1,0 +1,62 @@
+[
+  {
+    "estTermine": false,
+    "client": {
+      "prenom": "Alice",
+      "nom": "Dupont",
+      "age": 28,
+      "telephone": "555-1234",
+      "courriel": "alice.dupont@example.com"
+    },
+    "premierRendezVous": "2024-08-15T09:30:00Z",
+    "sujet": ["fleur", "oiseau"]
+  },
+  {
+    "estTermine": true,
+    "client": {
+      "prenom": "Jean",
+      "nom": "Martin",
+      "age": 35,
+      "telephone": "555-5678",
+      "courriel": "jean.martin@example.com"
+    },
+    "premierRendezVous": "2023-05-22T14:00:00Z",
+    "sujet": ["dragon", "fleur"]
+  },
+  {
+    "estTermine": false,
+    "client": {
+      "prenom": "Sophie",
+      "nom": "Leroux",
+      "age": 22,
+      "telephone": "555-8765",
+      "courriel": "sophie.leroux@example.com"
+    },
+    "premierRendezVous": "2024-10-05T16:00:00Z",
+    "sujet": ["fleur", "papillon"]
+  },
+  {
+    "estTermine": true,
+    "client": {
+      "prenom": "Paul",
+      "nom": "Durand",
+      "age": 40,
+      "telephone": "555-4321",
+      "courriel": "paul.durand@example.com"
+    },
+    "premierRendezVous": "2022-11-11T10:00:00Z",
+    "sujet": ["dragon", "rose"]
+  },
+  {
+    "estTermine": false,
+    "client": {
+      "prenom": "Marie",
+      "nom": "Bernard",
+      "age": 30,
+      "telephone": "555-3456",
+      "courriel": "marie.bernard@example.com"
+    },
+    "premierRendezVous": "2024-12-01T12:30:00Z",
+    "sujet": ["phénix", "oiseau"]
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "name": "2166311_projet_A24",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "_ts": "npx ts-node --files -r tsconfig-paths/register -r ./dotenv.config.js",
+    "build": "npx ts-node build.ts",
+    "dev": "npm run _ts -- ./src",
+    "dev:hot": "nodemon",
+    "lint": "npx eslint --ext .ts src/",
+    "lint:tests": "npx eslint --ext .ts spec/",
+    "start": "NODE_ENV=production node -r module-alias/register -r ./dotenv.config.js ./dist",
+    "test": "cross-env NODE_ENV=test npm run _ts -- ./spec",
+    "test1": "tsc && jasmine",
+    "test:hot": "nodemon --config ./nodemon.spec.json"
+  },
+  "_moduleAliases": {
+    "@src": "dist"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^8.0.0",
+    "inserturlparams": "^2.0.4",
+    "jet-logger": "^2.0.1",
+    "jet-paths": "^1.0.9",
+    "jet-validator": "^1.1.1",
+    "jsonfile": "^6.1.0",
+    "module-alias": "^2.2.3",
+    "moment": "^2.30.1",
+    "mongoose": "^8.6.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@jazim/mock-mongoose": "^1.0.1",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/find": "^0.2.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/jasmine": "^5.1.4",
+    "@types/jest": "^29.5.14",
+    "@types/jsonfile": "^6.1.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.4",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.11.1",
+    "eslint-plugin-node": "^11.1.0",
+    "find": "^0.3.0",
+    "fs-extra": "^11.2.0",
+    "jasmine": "^5.4.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0",
+    "ts-command-line-args": "^2.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  }
+}
