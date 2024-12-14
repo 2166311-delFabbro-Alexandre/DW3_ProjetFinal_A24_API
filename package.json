@@ -9,7 +9,7 @@
     "dev:hot": "nodemon",
     "lint": "npx eslint --ext .ts src/",
     "lint:tests": "npx eslint --ext .ts spec/",
-    "start": "node -r dotenv/config app.js",
+    "start": "node -r dotenv/config ./dist/server.js",
     "test": "cross-env NODE_ENV=test npm run _ts -- ./spec",
     "test1": "tsc && jasmine",
     "test:hot": "nodemon --config ./nodemon.spec.json"
