@@ -33,16 +33,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(EnvVars.CookieProps.Secret));
 
-if (EnvVars.NodeEnv === NodeEnvs.Dev.valueOf()) {
-  app.use(cors({
-    origin: 'http://localhost:5173', // Autorise uniquement le frontend local
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Méthodes HTTP autorisées
-    allowedHeaders: ['Content-Type', 'Authorization'], // En-têtes autorisés
-  }));
-}
+// if (EnvVars.NodeEnv === NodeEnvs.Dev.valueOf()) {
+//   app.use(cors({
+//     origin: 'http://localhost:5173', // Autorise uniquement le frontend local
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Méthodes HTTP autorisées
+//     allowedHeaders: ['Content-Type', 'Authorization'], // En-têtes autorisés
+//   }));
+// }
 
 app.use(cors({
-  origin: 'https://675cfc0a5b4ce9735e1eee48--lambent-marshmallow-7e8243.netlify.app/', // remplace par l'URL de ton front-end
+  origin: 'https://675cfc0a5b4ce9735e1eee48--lambent-marshmallow-7e8243.netlify.app/',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Show routes called in console during development
