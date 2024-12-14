@@ -9,7 +9,7 @@
     "dev:hot": "nodemon",
     "lint": "npx eslint --ext .ts src/",
     "lint:tests": "npx eslint --ext .ts spec/",
-    "start": "NODE_ENV=production node -r module-alias/register -r ./dotenv.config.js ./dist",
+    "start": "NODE_ENV=production node -r module-alias/register -r ./dotenv.config.js",
     "test": "cross-env NODE_ENV=test npm run _ts -- ./spec",
     "test1": "tsc && jasmine",
     "test:hot": "nodemon --config ./nodemon.spec.json"
