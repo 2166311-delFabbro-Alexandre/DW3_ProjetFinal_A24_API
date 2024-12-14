@@ -2,9 +2,10 @@
   "name": "2166311_projet_A24",
   "version": "0.0.0",
   "type": "commonjs",
+  "main": "dist/index.js",
   "scripts": {
     "_ts": "npx ts-node --files -r tsconfig-paths/register -r ./dotenv.config.js",
-    "build": "npx ts-node build.ts",
+    "build": "tsc",
     "dev": "npm run _ts -- ./src",
     "dev:hot": "nodemon",
     "lint": "npx eslint --ext .ts src/",
