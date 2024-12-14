@@ -1,35 +1,10 @@
-## About
+Github API: https://github.com/2166311-delFabbro-Alexandre/DW3_ProjetFinal_A24_API
+Github appli: https://github.com/2166311-delFabbro-Alexandre/DW3_ProjetFinal_A24_React
 
-This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
+Site de l'api: https://dw3-projetfinal-a24-api.onrender.com/api/tattoos
+Site react: https://lambent-marshmallow-7e8243.netlify.app/
 
+L'application sert à consigner tous les tatouages fait, de lister les sujets de tatouages et de rechercher des clients par leur courriel.
 
-## Available Scripts
-
-### `npm run dev` or `npm run dev:hot` (hot reloading)
-
-Run the server in development mode.
-
-### `npm test` or `npm run test:hot` (hot reloading)
-
-Run all unit-tests.
-
-### `npm test -- --testFile="name of test file" (i.e. --testFile=Users).`
-
-Run a single unit-test.
-
-### `npm run lint`
-
-Check for linting errors.
-
-### `npm run build`
-
-Build the project for production.
-
-### `npm start`
-
-Run the production build (Must be built first).
-
-
-## Additional Notes
-
-- If `npm run dev` gives you issues with bcrypt on MacOS you may need to run: `npm rebuild bcrypt --build-from-source`. 
+courriel: Rivard.Etienne@cegepvicto.ca
+mdp: supercalifragilistique
