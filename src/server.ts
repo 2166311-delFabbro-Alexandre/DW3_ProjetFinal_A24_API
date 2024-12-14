@@ -42,7 +42,7 @@ app.use(cookieParser(EnvVars.CookieProps.Secret));
 // }
 
 app.use(cors({
-  origin: 'https://675cfc0a5b4ce9735e1eee48--lambent-marshmallow-7e8243.netlify.app/',
+  origin: 'https://675cfc0a5b4ce9735e1eee48--lambent-marshmallow-7e8243.netlify.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
