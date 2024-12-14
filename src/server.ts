@@ -41,6 +41,10 @@ if (EnvVars.NodeEnv === NodeEnvs.Dev.valueOf()) {
   }));
 }
 
+app.use(cors({
+  origin: 'https://675cfc0a5b4ce9735e1eee48--lambent-marshmallow-7e8243.netlify.app/', // remplace par l'URL de ton front-end
+}));
+
 // Show routes called in console during development
 if (EnvVars.NodeEnv === NodeEnvs.Dev.valueOf()) {
   app.use(morgan('dev'));
